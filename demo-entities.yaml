@@ -12,6 +12,9 @@ metadata:
     - url: http://localhost:9090
       title: Prometheus UI
 
+  annotations:
+    prometheus.io/rule: 'up'
+
 spec:
   type: service
   lifecycle: production
