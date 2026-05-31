@@ -1,20 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
-
 metadata:
   name: demo-service
   description: Demo monitored service
-
   links:
     - url: http://localhost:3010
       title: Metrics App
-
     - url: http://localhost:9090
       title: Prometheus UI
-
+  # ADD THIS BLOCK RIGHT HERE:
   annotations:
     prometheus.io/rule: 'up'
-
 spec:
   type: service
   lifecycle: production
