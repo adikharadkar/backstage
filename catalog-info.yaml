@@ -11,7 +11,8 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: group:default/team-payments
+  # owner: group:default/team-payments
+  owner: user:default/guest
 
   dependsOn:
     - resource:default/payment-db
